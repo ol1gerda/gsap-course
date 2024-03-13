@@ -7,12 +7,12 @@ let responsive = true;
 
 // Урок 4. Задание 1-3.
 
-// let first = prompt('Название проекта?');
-// let res = titleProject + first;
-// let second = prompt('Уровень сложности?');
-// screensValue = second;
-// let third = prompt ('Нужна ли адаптивность?');
-// responsive = third;
+let first = prompt('Название проекта?');
+let res = titleProject + first;
+let second = prompt('Уровень сложности?');
+screensValue = second;
+let third = prompt ('Нужна ли адаптивность?');
+responsive = third;
 
 
 // Урок 4. Задание 4.
