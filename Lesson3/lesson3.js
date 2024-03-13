@@ -55,21 +55,6 @@ if (fullPrice1 >= 50000) {
     result = 'что-то пошло не так';
   }
 
-// if (fullPrice1 < 20000 || fullPrice1 > 0) {
-//     result = 'скидка не предусмотрена';
-//   } else {
-//     result = fullPrice1;
-//   }
-// if (fullPrice1 < 0) {
-//     result = 'что-то пошло не так';
-//   } else {
-//     result = fullPrice1;
-//   }
-// if (fullPrice1 = 20000 ||= 0 ||= 50000) {
-//     result = 'видеоинструкция в подарок';
-//   } else {
-//     result = fullPrice1;
-//   }
 
 console.log(fullPrice1, result);
 
