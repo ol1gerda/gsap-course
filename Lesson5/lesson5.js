@@ -67,19 +67,19 @@ console.log('Полная стоимость за вычетом процент�
 
 let getRollbackMessage;
 
-  if (getFullPrice() >= 50000) {
+  if (fullPrice >= 50000) {
       getRollbackMessage = function() {
       console.log('сделаем скидку в 10%');
     }
-  } else if (getFullPrice() >= 20000 && getFullPrice() < 50000) {
+  } else if (fullPrice >= 20000 && fullPrice < 50000) {
     getRollbackMessage = function() {
       console.log('сделаем скидку в 5%');
     }
-  } else if (getFullPrice() >= 0 && getFullPrice() < 20000) {
+  } else if (fullPrice >= 0 && fullPrice < 20000) {
     getRollbackMessage = function() {
       console.log('скидка не предусмотрена');
     }
-  } else if (getFullPrice() < 0) {
+  } else if (fullPrice < 0) {
     getRollbackMessage = function() {
       console.log('что-то пошло не так');
 }
