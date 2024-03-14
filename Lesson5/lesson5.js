@@ -1,3 +1,18 @@
+// Урок 2.5. Задание 3.
+
+// 3. Создай функцию getTitle.
+// Функция изменяет название проекта(titleProject), переводит первый символ в верхний регистр(делает заглавной),
+// а остальные в нижний регистр(делает маленькими) и возвращает отредактированное название проекта (titleProject). 
+
+let titleProject = prompt('Название проекта?');
+
+function getTitle() {
+  titleProject = titleProject.trim();
+  console.log('Название проекта:', titleProject[0].toUpperCase() + titleProject.slice(1).toLowerCase() );
+  return titleProject;
+}
+getTitle();
+
 // Урок 2.5. Задание 1.
 
 // 1. Создай / Объяви функцию getAllServicePrices с помощью метода "function expression".
@@ -11,11 +26,11 @@ let servicePrice2 = +prompt('Сколько будет стоить этот в�
 
 console.log(service1, servicePrice1, service2, servicePrice2);
 
-let allServicePrices = function getAllServicePrices() {
-  return servicePrice1 + servicePrice2;
+let getAllServicePrices = function () {
+    return servicePrice1 + servicePrice2;
 };
-
-console.log('Стоимость дополнительных услуг:', allServicePrices());
+let allServicePrices = getAllServicePrices ();
+console.log('Стоимость дополнительных услуг:', allServicePrices);
 
 // Урок 2.5. Задание 2.
 
@@ -26,25 +41,11 @@ console.log('Стоимость дополнительных услуг:', allSe
 let screenPrice = 10000;
 
 function getFullPrice() {
-  let fullPrice = allServicePrices() + screenPrice;
+  let fullPrice = allServicePrices + screenPrice;
   return fullPrice;
 };
 
 console.log('Полная стоимость:', getFullPrice());
-
-// Урок 2.5. Задание 3.
-
-// 3. Создай функцию getTitle.
-// Функция изменяет название проекта(titleProject), переводит первый символ в верхний регистр(делает заглавной),
-// а остальные в нижний регистр(делает маленькими) и возвращает отредактированное название проекта (titleProject). 
-
-let titleProject = prompt('Название проекта?');
-
-function getTitle() {
-  console.log('Название проекта:', titleProject[0].toUpperCase() + titleProject.slice(1).toLowerCase() );
-  return titleProject;
-}
-getTitle();
 
 // Урок 2.5. Задание 4.
 
