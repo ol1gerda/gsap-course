@@ -11,6 +11,7 @@ let titleProject = prompt('Название проекта?');
 let screensValue = prompt('Шаблонные, с уникальным дизайном, с анимациями?');
 let responsive = confirm('Нужна ли адаптивность?');
 
+console.log(titleProject, screensValue, responsive);
 
 // Урок 4. Задание 4.
 
@@ -19,16 +20,19 @@ let servicePrice1 = +prompt('Сколько это будет стоить?');
 let service2 = prompt('Какой еще сервис тебе нужен?');
 let servicePrice2 = +prompt('Сколько будет стоить этот второй сервис?');
 
+console.log(service1, servicePrice1, service2, servicePrice2);
 
 // Урок 4. Задание 5.
 
 let fullPrice = screenPrice + servicePrice1 + servicePrice2;
 
+console.log('Итого:', fullPrice);
 
 // Урок 4. Задание 6.
 
 let servicePercentPrice = Math.round( fullPrice - (fullPrice * percentage / 100) );
 
+console.log('Итого со скидкой подрядчику:', servicePercentPrice);
 
 // Урок 4. Задание 7.
 
@@ -48,9 +52,6 @@ if (fullPrice >= 50000) {
     result = 'что-то пошло не так';
   }
 
-
-console.log(titleProject, screensValue, responsive, 
-    service1, servicePrice1, service2, servicePrice2, 
-    fullPrice, servicePercentPrice, result);
+console.log(result);
 
 
