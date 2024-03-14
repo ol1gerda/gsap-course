@@ -41,11 +41,10 @@ console.log('Стоимость дополнительных услуг:', allSe
 let screenPrice = 10000;
 
 function getFullPrice() {
-  let fullPrice = allServicePrices + screenPrice;
-  return fullPrice;
+  return allServicePrices + screenPrice;
 };
-
-console.log('Полная стоимость:', getFullPrice());
+let fullPrice = getFullPrice();
+console.log('Полная стоимость:', fullPrice);
 
 // Урок 2.5. Задание 4.
 
@@ -56,11 +55,10 @@ console.log('Полная стоимость:', getFullPrice());
 let percentage = 10;
 
 function getServicePercentPrices() {
-  let servicePercentPrice = Math.round( getFullPrice() - (getFullPrice() * percentage / 100) );
-  return servicePercentPrice;
+  return Math.round( getFullPrice() - (getFullPrice() * percentage / 100) );
 };
-
-console.log('Полная стоимость за вычетом процента:', getServicePercentPrices());
+let servicePercentPrice = getServicePercentPrices();
+console.log('Полная стоимость за вычетом процента:', servicePercentPrice);
 
 // Урок 2.5. Задание 5.
 
