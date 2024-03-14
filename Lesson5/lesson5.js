@@ -55,7 +55,7 @@ console.log('Полная стоимость:', fullPrice);
 let percentage = 10;
 
 function getServicePercentPrices() {
-  return Math.round( getFullPrice() - (getFullPrice() * percentage / 100) );
+  return Math.round( fullPrice - (fullPrice * percentage / 100) );
 };
 let servicePercentPrice = getServicePercentPrices();
 console.log('Полная стоимость за вычетом процента:', servicePercentPrice);
