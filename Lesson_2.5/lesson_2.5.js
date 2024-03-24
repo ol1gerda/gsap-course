@@ -7,6 +7,9 @@ let screensValue;
 let responsive;
 let fullPrice;
 let servicePercentPrice;
+let service = '';
+let allServices = '';
+// let service2;
 
 
 
@@ -23,9 +26,9 @@ function checkIsNumber() {
   let num;
 
    while ( isNaN(parseFloat(num)) && !isFinite(num) || num === null || num === '') {
-  num = prompt("Сколько это будет стоить?");
+    num = prompt("Сколько это будет стоить?");
      }
-  return +num;
+return +num;
 
 }
 
@@ -34,8 +37,9 @@ const getAllServicePrices = function(){
   
   const n = 2;
   for (let i = 1; i <= n; i++) {
+    service = prompt('Какой сервис нужен?') + ' '
     textFromPrompt = checkIsNumber();
-  
+    allServices += service;
     allServicePrices += textFromPrompt;
     
   }
@@ -61,8 +65,6 @@ const getTitle = function() {
 
 
 asking()
-let service1 = prompt('Какой сервис нужен?')
-// let service2 = prompt('Какой еще сервис тебе нужен?')
 getAllServicePrices();
 fullPrice = getFullPrice();
 servicePercentPrice = Math.round(getServicePercentPrices());
@@ -73,8 +75,7 @@ newTitle = getTitle();
 console.log(titleProject);
 console.log(screensValue);
 console.log(responsive);
-console.log(service1);
-// console.log(service2);
+console.log(allServices);
 console.log(allServicePrices);
 console.log(fullPrice);
 console.log(servicePercentPrice);
