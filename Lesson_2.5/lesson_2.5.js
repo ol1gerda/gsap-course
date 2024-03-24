@@ -19,12 +19,6 @@ const asking = function() {
 }
 
 
-
-
-// let servicePrice1;
-// let servicePrice2;
-
-
 function checkIsNumber() {
   let num;
 
@@ -34,16 +28,6 @@ function checkIsNumber() {
   return +num;
 
 }
-
-// Для задания 2), цикл для проверки значений каждой доп услуги
-// while (servicePrice1 === num) {
-//   servicePrice1 = +prompt('Сколько это стоит?');    
-//   }
-// while (servicePrice2 === num) {
-//     servicePrice2 = +prompt('Сколько это стоит?');    
-//   } 
-
-
 
 
 const getAllServicePrices = function(){
@@ -58,7 +42,6 @@ const getAllServicePrices = function(){
   }
 
   
-
 const getFullPrice = function() {
   return allServicePrices + screenPrice;
 }
@@ -95,6 +78,7 @@ console.log(service1);
 console.log(allServicePrices);
 console.log(fullPrice);
 console.log(Math.round(servicePercentPrice));
+
 let getRollbackMessage;
 
   if (fullPrice >= 50000) {
