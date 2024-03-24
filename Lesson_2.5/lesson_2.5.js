@@ -65,7 +65,7 @@ let service1 = prompt('Какой сервис нужен?')
 // let service2 = prompt('Какой еще сервис тебе нужен?')
 getAllServicePrices();
 fullPrice = getFullPrice();
-servicePercentPrice = getServicePercentPrices();
+servicePercentPrice = Math.round(getServicePercentPrices());
 newTitle = getTitle();
 
 
@@ -77,7 +77,7 @@ console.log(service1);
 // console.log(service2);
 console.log(allServicePrices);
 console.log(fullPrice);
-console.log(Math.round(servicePercentPrice));
+console.log(servicePercentPrice);
 
 let getRollbackMessage;
 
