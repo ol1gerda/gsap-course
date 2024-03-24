@@ -1,33 +1,26 @@
 let service1 = prompt('Какой сервис нужен?');
-let service2 = prompt('Какой еще сервис тебе нужен?');
-// let servicePrice1;
-// let servicePrice2;
-
-
-let num;
-function checkIsNumber(num) {
-	return !isNaN(parseFloat(num)) && isFinite(num);
-};
-
-// while (servicePrice1 === num) {
-//   servicePrice1 = +prompt('Сколько это стоит?');    
-//   }
-// while (servicePrice2 === num) {
-//     servicePrice2 = +prompt('Сколько это стоит?');    
-//   } 
-
-
-
 let allServicePrices = 0;
-let textFromPrompt = '';
-const getAllServicePrices = function(){
 
-  while (textFromPrompt === num) {
-    return textFromPrompt;    
-    }
+function checkIsNumber() {
+  let num;
+
+   while ( isNaN(parseFloat(num)) && !isFinite(num) || num === null || num === '') {
+  num = prompt("Сколько это будет стоить?");
+     }
+  return +num;
+
+}
+
+// let ServicePrice = checkIsNumber();
+
+
+
+
+const getAllServicePrices = function(){
+  
   const n = 2;
   for (let i = 1; i <= n; i++) {
-    textFromPrompt = +prompt(`Сколько это будет стоить?`);
+    textFromPrompt = checkIsNumber();
   
     allServicePrices += textFromPrompt;
     
@@ -37,5 +30,7 @@ const getAllServicePrices = function(){
   getAllServicePrices();
 
   console.log(service1)
-  console.log(service2)
+
+  // console.log(`${checkIsNumber()}`);
+  // console.log(ServicePrice);
   console.log(allServicePrices);
