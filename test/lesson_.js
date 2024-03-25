@@ -1,36 +1,21 @@
-let service1 = prompt('Какой сервис нужен?');
-let allServicePrices = 0;
-
 function checkIsNumber() {
-  let num;
+  let answerNum;
 
-   while ( isNaN(parseFloat(num)) && !isFinite(num) || num === null || num === '') {
-  num = prompt("Сколько это будет стоить?");
+   while ( isNaN(parseFloat(answerNum)) && !isFinite(answerNum) || answerNum === '') {
+    answerNum = prompt("Угадайте число от 0 до 100");
+    if (answerNum === null) {
+      alert ('Вы завершили игру')
+    }
      }
-  return +num;
+return +answerNum;
 
 }
+const userAttemptsCount = function(){
+const n = 3;
+for (let i = 1; i <= n; i++) {
+  userAttempts = checkIsNumber();
+}
+}
+userAttemptsCount();
 
-// let ServicePrice = checkIsNumber();
-
-
-
-
-const getAllServicePrices = function(){
-  
-  const n = 2;
-  for (let i = 1; i <= n; i++) {
-    textFromPrompt = checkIsNumber();
-  
-    allServicePrices += textFromPrompt;
-    
-  }
-  }
-
-  getAllServicePrices();
-
-  console.log(service1)
-
-  // console.log(`${checkIsNumber()}`);
-  // console.log(ServicePrice);
-  console.log(allServicePrices);
+// console.log()
